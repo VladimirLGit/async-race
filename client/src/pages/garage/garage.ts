@@ -100,6 +100,8 @@ export class Garage extends Component {
       const generateName = `${mark[Math.floor(Math.random() * mark.length)]} ${
         model[Math.floor(Math.random() * model.length)]
       }`;
+
+      // eslint-disable-next-line no-await-in-loop
       await this.createCar({
         name: generateName,
         color: randomRGBColor(),
