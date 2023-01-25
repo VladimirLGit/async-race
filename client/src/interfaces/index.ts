@@ -44,5 +44,4 @@ export interface IWinner {
   wins: number;
 }
 
-
 export interface IWinCar extends ICar, IWinner {}
